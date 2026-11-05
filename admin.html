@@ -12,7 +12,7 @@
 <div class="flex gap-2 text-xs"><select id="flt" onchange="draw()" class="inp !w-auto"><option>الكل</option><option>قيد الدراسة</option><option>مقبول</option><option>مرفوض</option></select><input id="q" oninput="draw()" placeholder="بحث..." class="inp"></div>
 <div id="list" class="space-y-2"></div></div>
 <script>
-const URL_="https://script.google.com/macros/s/AKfycbxkYFW0i0IYK1IT57jKZYo8S0GBZEdlyGUkBNtv6EbYPYS6eGUvg8nPaJrMvzGIAX6V/exec";
+const URL_="https://script.google.com/macros/s/AKfycbzOOSlFCX4pk_bVQYTxTmpKKpYUSuaU2DnPp7Znc-HSryoAUJuaUboOQgfWZy0e0NlP/exec";
 let T="",D={users:[],activities:[],offers:[]},tab="users";const $=i=>document.getElementById(i);
 const TB={users:"المسجلون",activities:"الأنشطة",offers:"عروض المستثمرين"};
 async function go(e){e.preventDefault();T=$('tok').value.trim();try{await load(true)}catch(x){$('err').classList.remove('hidden')}}
